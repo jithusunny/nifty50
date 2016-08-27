@@ -4,8 +4,7 @@ It reads this data from a DB which would be populated by a background running pr
 
 
 
-Note about the Background job program - fetchnifty50.go
--------------------------------------------------------
+##### Note about the Background job program - fetchnifty50.go
 /worker/fetchnifty50.go is a go program that can be run in the background (maybe every 5 minutes) to fetch data from the NSEIndia website and push it into the DB.
 
 Here the fetchnifty50.go code has been merged into the controllers/deafult.go file.
