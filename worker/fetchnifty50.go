@@ -1,11 +1,11 @@
 package main
 
 import (
-	"os"
-	"log"
-	"time"
-	"net/http"
 	"encoding/json"
+	"log"
+	"net/http"
+	"os"
+	"time"
 
 	"database/sql"
 	"github.com/lib/pq"
@@ -32,10 +32,10 @@ type Response struct {
 
 func SetupDB() (txn *sql.Tx, db *sql.DB) {
 	url := os.Getenv("DATABASE_URL")
-    connection, _ := pq.ParseURL(url)
-    connection += " sslmode=require"
+	connection, _ := pq.ParseURL(url)
+	connection += " sslmode=require"
 
-    db, err := sql.Open("postgres", connection)
+	db, err := sql.Open("postgres", connection)
 
 	txn, err = db.Begin()
 
