@@ -11,16 +11,6 @@ import (
 	"github.com/lib/pq"
 )
 
-const (
-	AUTHOR  = "Jithu Sunny <jithusunnyk@gmail.com>"
-	VERSION = "0.0.1"
-
-	DEBUG       = false
-	DB_USERNAME = "postgres"
-	DB_PWD      = "postgres123"
-	DB_NAME     = "postgres"
-)
-
 type Item struct {
 	Symbol                   string
 	Ltp                      string
