@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"os"
 	"log"
 
 	"database/sql"
@@ -90,7 +91,7 @@ func GetLastUpdatedTs (db *sql.DB) (ts int) {
 func (main *MainController) Get() {
 	main.Data["Name"] = "Jithu Sunny"
 
-	db, err := sql.Open("postgres", "user=" + DB_USERNAME + " password=" + DB_PWD + " dbname=" + DB_NAME + " sslmode=require")
+	db, err := sql.Open("postgres", os.Getenv("DATABASE_URL"))
 	
 	if err != nil {
 		log.Fatal(err)
