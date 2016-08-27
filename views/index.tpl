@@ -3,6 +3,7 @@
 <script src="/static/js/moment.js"></script>
 <script src="/static/js/livestamp.js"></script>
 
+<title>Nifty 50 Top Gainers and Losers</title>
 <header>
   <div class="heading">
     <span class="main-title">Nifty 50</span> 
