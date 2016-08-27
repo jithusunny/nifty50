@@ -1,0 +1,78 @@
+body {
+	font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+	margin: 0px;
+}
+
+.heading {
+	margin:0px;
+	color: #000066;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 100%;
+}
+
+.heading .main-title {
+	color: black;
+	font-weight: bolder;
+	font-size: 130%;
+}
+
+h2 {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 120%;
+}
+
+.tablesection-wrapper {
+	text-align: center;
+}
+
+.tablesection {
+	display:inline-block;
+	float:center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+table.gridtable {
+	font-size:10px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.gridtable th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: solid;
+	border-color: #666666;
+}
+
+table.gridtable td {
+	min-width: 60px;
+	text-align: center;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+table.gridtable td.number {
+	text-align: right;
+}
+
+table.gridtable td.text {
+	text-align: left;
+}
+
+.gainers table.gridtable th{
+	background-color: #c6ffb3;
+}
+
+.losers table.gridtable th{
+	background-color: #ffcccc;
+}
