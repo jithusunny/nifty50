@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"database/sql"
-	_ "github.com/lib/pq"
+	"github.com/lib/pq"
 
 	"github.com/astaxie/beego"
 
