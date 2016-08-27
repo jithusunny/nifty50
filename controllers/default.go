@@ -89,9 +89,11 @@ func GetLastUpdatedTs (db *sql.DB) (ts int) {
 
 
 func (main *MainController) Get() {
-	main.Data["Name"] = "Jithu Sunny"
+	url := os.Getenv("DATABASE_URL")
+    connection, _ := pq.ParseURL(url)
+    connection += " sslmode=require"
 
-	db, err := sql.Open("postgres", os.Getenv("DATABASE_URL"))
+    db, err := sql.Open("postgres", connection)
 	
 	if err != nil {
 		log.Fatal(err)
